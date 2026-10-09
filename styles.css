@@ -273,6 +273,14 @@ summary:focus-visible {
   letter-spacing: -0.08em;
   pointer-events: none;
 }
+.hero-separator {
+  display: inline-block;
+  margin: 0 0.07em;
+  color: var(--ocre);
+  font-size: 0.38em;
+  letter-spacing: 0;
+  transform: translateY(-0.34em);
+}
 .hero-orbit {
   position: absolute;
   z-index: 0;
