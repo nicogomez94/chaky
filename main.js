@@ -61,29 +61,17 @@ if (hero && parallaxObject && matchMedia('(hover: hover) and (prefers-reduced-mo
 }
 
 if (matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches) {
-  const dot = document.createElement('div');
-  const ring = document.createElement('div');
-  dot.className = 'cursor-dot';
-  ring.className = 'cursor-ring';
-  dot.setAttribute('aria-hidden', 'true');
-  ring.setAttribute('aria-hidden', 'true');
-  document.body.append(dot, ring);
+  const pointer = document.createElement('div');
+  pointer.className = 'cursor-pointer';
+  pointer.setAttribute('aria-hidden', 'true');
+  pointer.innerHTML = '<svg viewBox="0 0 30 34" aria-hidden="true"><path d="M2.5 2.5 26 17 15 18.5 20.5 29 14.7 32 9 20.5 2.5 2.5Z"/></svg>';
+  document.body.append(pointer);
   document.body.classList.add('has-custom-cursor');
 
-  let x = -100, y = -100, targetX = -100, targetY = -100, moving = false;
-  const animateRing = () => {
-    x += (targetX - x) * 0.22;
-    y += (targetY - y) * 0.22;
-    ring.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`;
-    if (Math.abs(targetX - x) + Math.abs(targetY - y) > 0.25) requestAnimationFrame(animateRing);
-    else moving = false;
-  };
   window.addEventListener('pointermove', event => {
-    targetX = event.clientX;
-    targetY = event.clientY;
-    dot.style.transform = `translate3d(${targetX}px, ${targetY}px, 0) translate(-50%, -50%)`;
+    pointer.style.left = `${event.clientX}px`;
+    pointer.style.top = `${event.clientY}px`;
     document.body.classList.add('cursor-visible');
-    if (!moving) { moving = true; requestAnimationFrame(animateRing); }
   }, { passive: true });
   document.addEventListener('pointerover', event => {
     const target = event.target instanceof Element ? event.target : null;
