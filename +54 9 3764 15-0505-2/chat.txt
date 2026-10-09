@@ -1,0 +1,92 @@
+Los mensajes y las llamadas están cifrados de extremo a extremo. Nadie fuera de este chat, ni siquiera WhatsApp, puede leerlos ni escucharlos.
+[10/7/26, 1:07:07 PM] Tú: ¡Hola! Soy Nicolás de ZigoDev. Cómo puedo ayudarte?
+[10/7/26, 1:07:07 PM] +54 9 3764 15-0505: Hola, quiero una web para mi negocio
+[10/7/26, 1:07:08 PM] - Tu empresa usa un servicio seguro de Meta para administrar este chat. Haz clic para obtener más información.
+[10/7/26, 1:07:08 PM] - Recibiste un mensaje en el teléfono, pero no es compatible con la versión que tienes de WhatsApp Web.
+[10/7/26, 1:07:23 PM] Tú: Genial, ¿a qué se dedica tu negocio?
+[10/8/26, 3:21:33 AM] +54 9 3764 15-0505: <mensaje de voz omitido>
+[10/8/26, 7:44:49 AM] +54 9 3764 15-0505: Hola, quiero una web para mi negocio
+[10/8/26, 10:00:53 AM] - Este chat se inició a partir de un anuncio en Facebook o Instagram. El uso compartido de datos para las actividades relacionadas con el cliente está activado.
+[10/8/26, 4:59:47 PM] Tú: Dale , te cuento: Nosotros en ZigoDev trabajamos con desarrollo web y soluciones digitales a medida.
+
+Te paso algunos precios aproximados:
+
+* Landing pages: desde $200.000.
+* Tiendas online: desde $300.000, con catálogo, carrito y medios de pago.
+* Implementaciones de IA: chatbots para WhatsApp, atención automática y automatización de procesos. Se cotizan según lo que necesite cada cliente.
+* Sistemas y plataformas a medida: presupuesto según funcionalidades.
+
+En cuanto a la modalidad, generalmente trabajamos con un 30% de anticipo para comenzar y el 70% restante al finalizar. Los tiempos de entrega dependen de cada proyecto, pero una landing puede estar lista en 24hs
+[10/8/26, 5:09:31 PM] +54 9 3764 15-0505: Genial
+[10/8/26, 5:09:40 PM] +54 9 3764 15-0505: Trabajan con código, con WordPress?
+[10/8/26, 5:10:21 PM] Tú: Si mayormente con codigo desde 0
+[10/8/26, 5:10:39 PM] Tú: tenemos varios sitios hechos con wordpress y woocommerce
+[10/8/26, 5:11:23 PM] +54 9 3764 15-0505: Genial
+[10/8/26, 5:11:39 PM] +54 9 3764 15-0505: Manejan presentación de prototipo? Para propuestas a negocios/empresas/proyectos
+[10/8/26, 5:15:25 PM] Tú: Si, en algunos casos hemos trabajado con prototipos, generalmente cuando son sistemas o proyectos más grandes, donde el cliente necesita visualizar mejor cómo quedaría y funcionaría la plataforma antes de avanzar con el desarrollo
+[10/8/26, 5:16:29 PM] +54 9 3764 15-0505: Un sitio web con 3 páginas? Podría implementarse con ese modo?
+[10/8/26, 5:17:42 PM] Tú: Sí, se puede implementar también para una web de 3 páginas, no habría problema
+[10/8/26, 5:17:49 PM] Tú: La idea sería presentar primero un prototipo al cliente para que apruebe el diseño antes de avanzar con el desarrollo?
+[10/8/26, 5:21:11 PM] +54 9 3764 15-0505: Si
+[10/8/26, 5:21:16 PM] +54 9 3764 15-0505: Cuánto sería ese valor?
+[10/8/26, 5:22:49 PM] Tú: El valor sería de $200.000 (pago unico)
+[10/8/26, 5:22:58 PM] Tú: el hosting y el dominio son gratis el primer año
+[10/8/26, 5:23:35 PM] +54 9 3764 15-0505: El valor del prototipo 200mil?
+[10/8/26, 5:25:55 PM] Tú: No, los $200.000 serían por el sitio completo de 3 páginas
+[10/8/26, 5:25:58 PM] Tú: El prototipo te lo puedo hacer sin costo, como para que puedas ver como trabajamos o si tenes que presentarles a algun socio
+[10/8/26, 5:32:14 PM] +54 9 3764 15-0505: Genial, osea puedo contar con ustedes para presentar prototipo, y después a cerrar, pasamos al trabajo?
+[10/8/26, 5:32:18 PM] +54 9 3764 15-0505: Bien
+[10/8/26, 5:34:16 PM] Tú: Si, seguro. si queres me pasas mas o menos de que se trata el negocio, algun logo o alguna pagina de referencia que tengas, hacemos el prototipo sin compromiso, y si después te gusta avanzamos con la seña ($40.000) y luego el resto cuando este terminado el proyecto
+[10/8/26, 5:34:44 PM] +54 9 3764 15-0505: Genial
+[10/8/26, 5:35:41 PM] +54 9 3764 15-0505: Te comento, no tienen branding, ni paleta, ni fuentes, nada, del dominio si va por mí parte por cuestiones, pero el hosting si aceptamos
+[10/8/26, 5:40:30 PM] Tú: dale ok! no hay problema. decime de que rubro es el negocio o a que se dedican
+[10/8/26, 6:06:01 PM] +54 9 3764 15-0505: Se dedican al rubro de la moda, indumentaria y accesorios, con textiles artesanales y tejidos tradicionales, crean diseñan y elaboran ponchos, con modelos de Argentina "poncho bandera" el que quiero destacar, la identidad de marca es algo de tradición artesanal con cultura Argentina sumando tintes naturales y trabajo textil, llevan años, es un emprendimiento familiar. 
+
+Es una marca Argentina Patagónica de modo artesanal especializada en ponchos y piezas textiles que combinan tradición identidad cultural y diseño y su propuesta pone en valor el oficios artesanal y la herencia textil.
+[10/8/26, 6:06:25 PM] +54 9 3764 15-0505: Mira, te paso todo, para que digan que si, y de acá salgamos del prototipo a que esté en internet
+[10/8/26, 6:06:50 PM] +54 9 3764 15-0505: [Reenviado] https://fonts.google.com/selection?preview.script=Latn
+[10/8/26, 6:06:51 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Propuesta Brading.pdf
+[10/8/26, 6:06:52 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> bodoni-moda-font-family-free-download-removebg-preview.png
+[10/8/26, 6:06:52 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Gemini_Generated_Image_njd7donjd7donjd7-removebg-preview.png
+[10/8/26, 6:06:52 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Gemini_Generated_Image_d4aqicd4aqicd4aq-removebg-preview.png
+[10/8/26, 6:06:52 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Manual_de_Marca_Editable.pdf
+[10/8/26, 6:06:52 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Bodoni_Moda,DM_Sans,Lora.zip
+[10/8/26, 6:06:53 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Captura de pantalla 2026-10-08 172425.png
+[10/8/26, 6:06:53 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Captura de pantalla 2026-10-08 172437.png
+[10/8/26, 6:06:53 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Captura de pantalla 2026-10-08 172504.png
+[10/8/26, 6:06:53 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Captura de pantalla 2026-10-08 180321.png
+[10/8/26, 6:06:54 PM] +54 9 3764 15-0505: [Reenviado] <documento omitido> Captura de pantalla 2026-10-08 180402.png
+[10/8/26, 6:07:07 PM] +54 9 3764 15-0505: Cualquier otra cosa que requieras
+[10/8/26, 6:08:41 PM] Tú: dale buenisimo me re sirve lo que me mandaste
+[10/8/26, 6:09:38 PM] +54 9 3764 15-0505: Si
+[10/8/26, 6:09:42 PM] +54 9 3764 15-0505: Ah!
+[10/8/26, 6:09:51 PM] +54 9 3764 15-0505: Espérame un momento, me olvidé de esto
+[10/8/26, 6:10:49 PM] +54 9 3764 15-0505: Cualquier cosa que parezca demasiado, o no se me entienda, díganme, soy nueva en esto, así que todo feedback, me viene bien. Te voy a pasar el copy como idea
+[10/8/26, 6:19:06 PM] +54 9 3764 15-0505: Algunos FQS 
+
+¿Cómo sé que el poncho es realmente artesanal?
+Rua Chaky elabora sus piezas en Belén, Catamarca, con tradición textil regional y tintes naturales. Podés consultarnos y te contamos el proceso detrás de cada modelo antes de comprar. 
+
+Hacen envíos al exterior?
+Sí, coordinamos envíos tanto dentro de Argentina como al exterior. Escribinos y te informamos los tiempos y costos según tu destino. ¿
+
+Puedo comprar un poncho como regalo? ¿Viene presentado para eso?
+Es una de las compras más frecuentes — un poncho Rua Chaky es un regalo con identidad real. Consultanos y te ayudamos a elegir el modelo ideal y la mejor forma de enviarlo.
+
+ ¿Cómo elijo el modelo y el tamaño correcto?
+Antes de confirmar tu compra, podés consultarnos por los modelos disponibles, medidas y características de cada pieza. No comprás a ciegas — te acompañamos en la decisión. 
+
+¿Cuánto tiempo tarda en llegar?
+Los tiempos de envío dependen del destino y la disponibilidad de la pieza. Escribinos y te damos una estimación concreta para que puedas planificar tu compra.
+[10/8/26, 6:19:26 PM] +54 9 3764 15-0505: Esos son algunos, de las preguntas que le hacen en las publicaciones
+[10/8/26, 6:19:31 PM] +54 9 3764 15-0505: Eso es todo 🙌🏻
+[10/8/26, 6:21:34 PM] Tú: genial! ahi voy preparando el prototipo y te aviso cuando este listo
+[10/8/26, 6:21:57 PM] +54 9 3764 15-0505: Buenísimo
+[10/8/26, 6:46:23 PM] Tú: te hago una ultima consulta para orientar bien el prototipo: la idea es que la web sea más institucional, mostrando la marca y los productos con consultas por ws, o buscan que los clientes puedan comprar directamente desde la página, con carrito y medios de pago?
+[10/8/26, 6:57:05 PM] +54 9 3764 15-0505: No, checkout no, sino una sección de consultas para un poncho personalizado a medida, con ejemplos de colores, 3 colores a 5 max
+[10/8/26, 6:57:32 PM] +54 9 3764 15-0505: Que sea institucional, pero si es posible, con algunos motion, dinámico sencillo, no galáctico
+[10/8/26, 6:58:01 PM] +54 9 3764 15-0505: Fíjate la que realice yo, es muy aburrida
+[10/8/26, 6:58:52 PM] +54 9 3764 15-0505: https://trusting-stories-545082.framer.app/
+[10/8/26, 6:59:32 PM] Tú: dale oka! ahi la veo bien
+[10/8/26, 6:59:50 PM] +54 9 3764 15-0505: https://olpagroup.com/
+[10/8/26, 7:00:18 PM] +54 9 3764 15-0505: con que tenga algunos de esta pagina, como movimiento de maouse, algo asi, para detonar profesionalismo y excelencia
