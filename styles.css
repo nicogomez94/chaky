@@ -1462,7 +1462,7 @@ summary:focus-visible {
   }
   .object-image img {
     width: 280px;
-    top: 60%;
+    top: 55%;
   }
   .object-plinth {
     width: 175px;
@@ -1934,7 +1934,7 @@ body.has-custom-cursor select {
 /* Fotografía editorial: imagen completa dentro de cada bloque y rótulos legibles. */
 .quick-links {
   gap: 12px;
-  padding: 14px 5%;
+  padding: 60px 5%;
   background: #1e292c;
 }
 .quick-link,
@@ -2135,7 +2135,7 @@ body.has-custom-cursor select {
 }
 @media (max-width: 768px) {
   .quick-links {
-    padding: 12px 5%;
+    padding: 60px 5%;
     gap: 10px;
   }
   .quick-link,
