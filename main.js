@@ -1,7 +1,7 @@
 const revealItems = document.querySelectorAll('.fade-in');
 const revealStyles = [
-  ['.statement-heading, .feature-copy, .section-heading, .inner-hero-copy, .custom-hero-copy, .custom-form-intro', 'reveal-left'],
-  ['.statement-body, .custom-form, .faq-list, .product-copy', 'reveal-right'],
+  ['.statement-heading, .feature-copy, .section-heading, .inner-hero-copy, .custom-hero-copy, .custom-form-intro, .home-contact-copy', 'reveal-left'],
+  ['.statement-body, .custom-form, .faq-list, .product-copy, .home-contact-form', 'reveal-right'],
   ['.feature-art, .inner-hero-art, .custom-hero-art, .product-visual', 'reveal-zoom'],
   ['.craft-card, .collection-card, .process-item, .quick-link', 'reveal-tilt'],
   ['.consult-strip, .featured-product', 'reveal-clip']
@@ -61,27 +61,67 @@ if (hero && parallaxObject && matchMedia('(hover: hover) and (prefers-reduced-mo
 }
 
 if (matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches) {
+  window.addEventListener('wheel', event => {
+    if (event.ctrlKey || event.metaKey || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+    if (event.target instanceof Element && event.target.closest('textarea, select, input')) return;
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? window.innerHeight : 1;
+    event.preventDefault();
+    const distance = event.deltaY * unit * 0.86;
+    try { window.scrollBy({ top: distance, behavior: 'instant' }); }
+    catch { window.scrollBy(0, distance); }
+  }, { passive: false });
+}
+
+if (matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches) {
   const pointer = document.createElement('div');
-  pointer.className = 'cursor-pointer';
+  pointer.className = 'cursor-dot';
   pointer.setAttribute('aria-hidden', 'true');
-  pointer.innerHTML = '<svg viewBox="0 0 30 34" aria-hidden="true"><path d="M2.5 2.5 26 17 15 18.5 20.5 29 14.7 32 9 20.5 2.5 2.5Z"/></svg>';
   document.body.append(pointer);
   document.body.classList.add('has-custom-cursor');
 
+  let x = 0, y = 0, targetX = 0, targetY = 0, moving = false, started = false;
+  const follow = () => {
+    x += (targetX - x) * 0.24;
+    y += (targetY - y) * 0.24;
+    pointer.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`;
+    if (Math.abs(targetX - x) + Math.abs(targetY - y) > 0.2) requestAnimationFrame(follow);
+    else moving = false;
+  };
   window.addEventListener('pointermove', event => {
-    pointer.style.left = `${event.clientX}px`;
-    pointer.style.top = `${event.clientY}px`;
+    targetX = event.clientX;
+    targetY = event.clientY;
+    if (!started) {
+      x = targetX;
+      y = targetY;
+      started = true;
+    }
     document.body.classList.add('cursor-visible');
+    if (!moving) { moving = true; requestAnimationFrame(follow); }
   }, { passive: true });
   document.addEventListener('pointerover', event => {
     const target = event.target instanceof Element ? event.target : null;
-    document.body.classList.toggle('cursor-hover', Boolean(target?.closest('a, button, summary, .swatch')));
     document.body.classList.toggle('cursor-text', Boolean(target?.closest('input:not([type="checkbox"]), textarea, select')));
   });
-  document.addEventListener('pointerdown', () => document.body.classList.add('cursor-pressed'));
-  document.addEventListener('pointerup', () => document.body.classList.remove('cursor-pressed'));
-  document.addEventListener('pointerleave', () => document.body.classList.remove('cursor-visible'));
+  document.addEventListener('pointerleave', () => {
+    document.body.classList.remove('cursor-visible');
+    started = false;
+  });
 }
+
+const homeContactForm = document.querySelector('#home-contact-form');
+homeContactForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  if (!homeContactForm.reportValidity()) return;
+  const data = new FormData(homeContactForm);
+  const message = [
+    'Hola Rua Chaky, quisiera hacer una consulta.',
+    `Mi nombre: ${data.get('nombre')}`,
+    `Mi contacto: ${data.get('contacto')}`,
+    `Me interesa: ${data.get('interes')}`,
+    `Mi mensaje: ${data.get('mensaje')}`
+  ].join('\n');
+  window.open(`https://wa.me/5493835521144?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+});
 
 const form = document.querySelector('#custom-form');
 if (form) {

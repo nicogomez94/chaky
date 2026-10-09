@@ -94,22 +94,18 @@
 .feature-art img,.inner-hero-art img,.product-visual img,.custom-hero-art img{transition:filter .6s ease,scale .8s cubic-bezier(.22,1,.36,1)}
 .feature-art:hover img,.inner-hero-art:hover img,.product-visual:hover img,.custom-hero-art:hover img{scale:1.045}
 
-/* Puntero único con punta precisa y respuesta sobre elementos interactivos. */
+/* Punto de marca con un seguimiento breve. */
 body.has-custom-cursor,body.has-custom-cursor a,body.has-custom-cursor button,body.has-custom-cursor summary,body.has-custom-cursor .swatch{cursor:none}
 body.has-custom-cursor input:not([type=checkbox]),body.has-custom-cursor textarea,body.has-custom-cursor select{cursor:text}
-.cursor-pointer{position:fixed;left:-100px;top:-100px;z-index:1000;width:30px;height:34px;pointer-events:none;opacity:0;transform-origin:3px 3px;filter:drop-shadow(2px 3px 1px rgba(18,26,27,.28));transition:opacity .15s ease,scale .22s ease,rotate .22s ease}
-.cursor-pointer svg{display:block;width:100%;height:100%;overflow:visible}
-.cursor-pointer path{fill:var(--ocre);stroke:var(--petroleo);stroke-width:1.7;stroke-linejoin:round}
-.cursor-visible .cursor-pointer{opacity:1}
-.cursor-hover .cursor-pointer{scale:1.18;rotate:-14deg}
-.cursor-pressed .cursor-pointer{scale:.88}
-.cursor-text .cursor-pointer{opacity:0}
-@media (hover:none),(pointer:coarse){.cursor-pointer{display:none}}
+.cursor-dot{position:fixed;left:0;top:0;z-index:1000;width:14px;height:14px;border:2px solid var(--petroleo);border-radius:50%;background:var(--ocre);box-shadow:0 2px 6px rgba(18,26,27,.25);pointer-events:none;opacity:0;transform:translate3d(-100px,-100px,0);transition:opacity .15s ease}
+.cursor-visible .cursor-dot{opacity:1}
+.cursor-text .cursor-dot{opacity:0}
+@media (hover:none),(pointer:coarse){.cursor-dot{display:none}}
 @media (prefers-reduced-motion:reduce){
   .fade-in.reveal-left,.fade-in.reveal-right,.fade-in.reveal-zoom,.fade-in.reveal-tilt,.fade-in.reveal-clip,
   .fade-in.reveal-left.visible,.fade-in.reveal-right.visible,.fade-in.reveal-zoom.visible,.fade-in.reveal-tilt.visible,.fade-in.reveal-clip.visible{opacity:1;transform:none;filter:none;clip-path:none;will-change:auto}
   .feature-banner::after,.fade-in.reveal-clip::after{display:none}
-  .cursor-pointer{display:none}
+  .cursor-dot{display:none}
 }
 @media (max-width:768px){.object-image{top:-28px}}
 
@@ -146,3 +142,32 @@ body.has-custom-cursor input:not([type=checkbox]),body.has-custom-cursor textare
 .custom-detail figcaption{margin-top:11px;font:600 10px var(--heading);letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:768px){.quick-links{padding:12px 5%;gap:10px}.quick-link,.quick-link:first-child,.quick-link:last-child{min-height:250px;padding:22px}.quick-kicker{left:22px;top:20px}.quick-copy strong{font-size:31px}.feature-art .feature-photo,.inner-hero-art .real-cover,.product-visual .real-cover,.custom-hero-art .real-cover{width:100%;height:100%}.custom-detail{max-width:none}.custom-detail img{height:240px}}
 @media(max-width:480px){.quick-link,.quick-link:first-child,.quick-link:last-child{min-height:215px}.quick-copy strong{font-size:29px}.feature-art .feature-photo,.inner-hero-art .real-cover,.product-visual .real-cover,.custom-hero-art .real-cover{width:100%;height:100%}.collection-card-visual .real-cover{width:100%;height:100%}}
+
+/* La tapa del pedestal repite el corte diagonal en ambos extremos. */
+.object-plinth::before{clip-path:polygon(7% 0,93% 0,100% 100%,0 100%)}
+
+/* Movimiento leve de los anillos detrás de la pieza. */
+.hero-orbit{border-color:rgba(49,71,80,.2);animation:orbit-breathe 9s ease-in-out infinite}
+.hero-orbit::before{border-color:rgba(49,71,80,.15);animation:ring-breathe 7.5s ease-in-out infinite}
+.hero-orbit::after{border-color:rgba(49,71,80,.12);animation:ring-breathe 10s ease-in-out infinite reverse}
+@keyframes orbit-breathe{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.82}50%{transform:translate(-50%,-50%) scale(1.065);opacity:1}}
+@keyframes ring-breathe{0%,100%{transform:scale(.97);opacity:.7}50%{transform:scale(1.04);opacity:1}}
+
+/* Consulta directa al cierre de la portada. */
+.home-contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:7%;align-items:center;background:var(--petroleo);color:var(--crudo);padding:105px max(5%,calc((100vw - 1296px)/2)) 115px}
+.home-contact-copy{align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.home-contact-copy h2{font-size:72px;max-width:570px;margin:24px 0 30px}
+.home-contact-copy p{font-size:18px;line-height:1.7;max-width:460px}
+.home-contact-origin{display:block;margin-top:65px;padding-top:17px;border-top:1px solid rgba(231,223,205,.35);font:600 10px var(--heading);letter-spacing:.15em}
+.home-contact-form{display:flex;flex-direction:column;gap:28px;padding:48px;background:var(--blanco);color:var(--carbon)}
+.home-contact-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.home-contact-form label{display:block;font:600 11px var(--heading);letter-spacing:.08em;text-transform:uppercase}
+.home-contact-form input,.home-contact-form select,.home-contact-form textarea{display:block;width:100%;padding:14px 0;margin-top:8px;border:0;border-bottom:1px solid #bdb4a3;border-radius:0;background:transparent;color:var(--carbon);font:400 16px var(--body);outline:none}
+.home-contact-form textarea{resize:vertical;min-height:100px}
+.home-contact-form input:focus,.home-contact-form select:focus,.home-contact-form textarea:focus{border-color:var(--petroleo)}
+.home-contact-form .button{align-self:flex-start}
+.home-contact-note{margin:-12px 0 0;font-size:12px;line-height:1.45;color:#625e55}
+@media(max-width:1024px){.home-contact{gap:4%}.home-contact-copy h2{font-size:60px}.home-contact-form{padding:36px}}
+@media(max-width:768px){.home-contact{grid-template-columns:1fr;gap:40px;padding:80px 5%}.home-contact-copy h2{font-size:53px}.home-contact-origin{margin-top:25px}.home-contact-form{padding:32px}}
+@media(max-width:480px){.home-contact{padding:70px 5% 80px}.home-contact-copy h2{font-size:48px}.home-contact-copy p{font-size:16px}.home-contact-form{padding:25px 20px;gap:23px}.home-contact-fields{grid-template-columns:1fr;gap:23px}.home-contact-form .button{width:100%;font-size:10px;gap:8px}}
+@media(prefers-reduced-motion:reduce){.hero-orbit,.hero-orbit::before,.hero-orbit::after{animation:none}}

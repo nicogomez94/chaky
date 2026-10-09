@@ -66,7 +66,26 @@
       </div>
     </section>
 
-    <section class="consult-strip fade-in"><div><span class="eyebrow">UNA ELECCIÓN PERSONAL</span><h2>Tu próximo poncho puede contar <em>tu historia.</em></h2></div><a class="round-arrow" href="personalizado.html" aria-label="Consultar por un poncho personalizado"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></section>
+    <section class="consult-strip fade-in"><div><span class="eyebrow">UNA ELECCIÓN PERSONAL</span><h2>El próximo paso es <em>conversar.</em></h2></div><a class="round-arrow" href="#contacto" aria-label="Ir al formulario de contacto"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></section>
+
+    <section class="home-contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="home-contact-copy fade-in">
+        <span class="eyebrow">CONTACTO DIRECTO</span>
+        <h2 id="contacto-title">Contanos qué tenés <em>en mente.</em></h2>
+        <p>Una pieza especial empieza con una charla. Escribinos sobre el poncho que buscás y te respondemos personalmente.</p>
+        <span class="home-contact-origin">RUA CHAKY · BELÉN, CATAMARCA</span>
+      </div>
+      <form class="home-contact-form fade-in" id="home-contact-form">
+        <div class="home-contact-fields">
+          <label>Tu nombre<input name="nombre" type="text" autocomplete="name" placeholder="¿Cómo te llamás?" required></label>
+          <label>Tu WhatsApp o email<input name="contacto" type="text" autocomplete="email" placeholder="Para poder responderte" required></label>
+        </div>
+        <label>¿Qué te interesa?<select name="interes" required><option value="">Elegí una opción</option><option>Poncho Bandera</option><option>Ponchos artesanales</option><option>Una pieza a medida</option><option>Quiero asesoramiento</option></select></label>
+        <label>Tu mensaje<textarea name="mensaje" rows="4" placeholder="Contanos un poco sobre lo que estás buscando…" required></textarea></label>
+        <button class="button button-primary" type="submit">Enviar consulta por WhatsApp <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+        <p class="home-contact-note">La consulta se abre en WhatsApp para que puedas revisarla antes de enviarla.</p>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
